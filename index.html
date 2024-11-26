@@ -24,18 +24,21 @@
         <h1>AI Haiku Generator</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the poem"
-            autofocus
-            required
-            id="user-instructions"
-            class="text-input"
-          />
-          <input type="submit" class="submit-input" />
-        </form>
-        <div id="poem" class="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autofocus
+              required
+              id="user-instructions"
+              class="text-input"
+            />
+            <input type="submit" class="submit-input" />
+          </form>
+          <div class="hint">i.e; Sakura, Tea, Red</div>
+        </div>
+        <div id="poem" class="poem hidden"></div>
       </main>
       <footer>
         This AI prolect was coded by
