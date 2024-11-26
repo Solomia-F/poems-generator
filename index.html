@@ -3,39 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Handjet:wght@100..900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
+    <div class="container">
+      <header>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/494/original/25861072.jpg?1732636639"
+          alt=""
         />
-        <input type="submit" />
-      </form>
-      <div></div>
-    </main>
-    <footer>
-      This AI prolect was coded by
-      <a href="https://github.com/Solomia-F" target="_blank"
-        >Solomiia Fedyshyn</a
-      >
-      and is
-      <a href="https://github.com/Solomia-F/poems-generator" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://visionary-chimera-964763.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+        <h1>AI Haiku Generator</h1>
+      </header>
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            id="user-instructions"
+            class="text-input"
+          />
+          <input type="submit" class="submit-input" />
+        </form>
+        <div id="poem" class="poem"></div>
+      </main>
+      <footer>
+        This AI prolect was coded by
+        <a href="https://github.com/Solomia-F" target="_blank"
+          >Solomiia Fedyshyn</a
+        >
+        and is
+        <a href="https://github.com/Solomia-F/poems-generator" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://visionary-chimera-964763.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
